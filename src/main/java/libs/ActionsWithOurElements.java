@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class ActionWithOurElement {
+public class ActionsWithOurElements {
     WebDriver webDriver;
     Logger logger;
     WebDriverWait webDriverWait15;
 
 
 
-    public ActionWithOurElement(WebDriver webDriver) {
+    public ActionsWithOurElements(WebDriver webDriver) {
         this.webDriver = webDriver;
         logger = Logger.getLogger(getClass());
 
