@@ -2,7 +2,7 @@ package mainTests;
 
 import parentTest.ParentTest;
 
-public class GoToSignPage extends ParentTest {
+public class GoToSignPageTest extends ParentTest {
 
 
 }
