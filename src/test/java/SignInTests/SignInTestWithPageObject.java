@@ -1,9 +1,9 @@
-package loginTests;
+package SignInTests;
 
 import org.junit.Test;
 import parentTest.ParentTest;
 
-public class LoginTestWithPageObject extends ParentTest {
+public class SignInTestWithPageObject extends ParentTest {
 
     @Test
     public void validLogin(){
