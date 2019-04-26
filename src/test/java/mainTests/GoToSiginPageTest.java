@@ -12,7 +12,7 @@ import parentTest.ParentTest;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-public class GoToLoginPageTest {
+public class GoToSiginPageTest {
     WebDriver webDriver;
 
     @Before

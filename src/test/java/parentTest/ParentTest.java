@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.MainPage;
+import pages.SignInPage;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -14,6 +16,9 @@ public class ParentTest {
     WebDriver webDriver;
     Logger logger = Logger.getLogger(getClass());
 
+    protected MainPage mainPage;
+    protected SignInPage signInPage;
+
     @Before
     public void setUp() {
         File file = new File("./src/drivers/chromedriver.exe");
@@ -21,6 +26,10 @@ public class ParentTest {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+
+        mainPage = new MainPage(webDriver);
+        signInPage = new SignInPage(webDriver);
     }
 
 
