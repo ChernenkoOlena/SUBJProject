@@ -6,8 +6,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.MainPage;
-import pages.SignInPage;
+import pages.*;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -18,6 +17,12 @@ public class ParentTest {
 
     protected MainPage mainPage;
     protected SignInPage signInPage;
+    protected ShowcasePage showcasePage;
+    protected SignUpPage signUpPage;
+    protected SettingsPage settingsPage;
+    protected SearchPage searchPage;
+    protected ProfilePage profilePage;
+    protected PrescriptionPage prescriptionPage;
 
     @Before
     public void setUp() {
@@ -27,11 +32,15 @@ public class ParentTest {
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-
         mainPage = new MainPage(webDriver);
         signInPage = new SignInPage(webDriver);
+        showcasePage = new ShowcasePage(webDriver);
+        signUpPage = new SignUpPage(webDriver);
+        settingsPage = new SettingsPage(webDriver);
+        searchPage = new SearchPage(webDriver);
+        profilePage = new ProfilePage(webDriver);
+        prescriptionPage = new PrescriptionPage(webDriver);
     }
-
 
 
     @After

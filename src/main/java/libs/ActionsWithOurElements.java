@@ -51,9 +51,7 @@ public class ActionsWithOurElements {
 
     public void clickOnElement(WebElement webElement) {
         try {
-
             webDriverWait15.until(ExpectedConditions.elementToBeClickable(webElement));
-
             webElement.click();
             logger.info("Element was clicked");
         } catch (Exception e) {
@@ -62,8 +60,8 @@ public class ActionsWithOurElements {
     }
 
     private void printErrorAndStopTest() {
-        logger.error("can not with Element");
-        Assert.fail("can not with Element");
+        logger.error("Can not work with Element");
+        Assert.fail("Can not with with Element");
     }
 
     public boolean isElementPresent(WebElement webElement) {
